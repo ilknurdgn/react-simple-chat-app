@@ -1,0 +1,35 @@
+.message-container {
+  height: calc(100% - 50px);
+}
+
+.message {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 20px 20px 10px 10px;
+}
+
+.owner {
+  flex-direction: row-reverse;
+}
+.messageInfo {
+}
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.messageContet {
+  color: white;
+  background-color: #8da4f1;
+  padding: 10px 20px;
+  margin-right: 20px;
+  margin-top: 0px;
+  border-radius: 10px 0px 10px 10px;
+  max-width: 50%;
+  height: auto; /* Yüksekliği otomatik olarak ayarlayın */
+  overflow: hidden; /* Taşan içeriği gizlemez */
+  word-wrap: break-word; /* Taşan metni yeni satırlara bölmek için */
+  white-space: pre-wrap; /* Metni otomatik olarak yeni satırlara geçirir */
+}
