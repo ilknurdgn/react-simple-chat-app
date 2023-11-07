@@ -6,8 +6,11 @@ import './input.css';
 function Input({ addNewMessage, newMessage, setNewMessage }) {
   const messageSubmitHandle = (e) => {
     e.preventDefault();
-    addNewMessage(newMessage);
-    setNewMessage('');
+    if (newMessage == '') {
+    } else {
+      addNewMessage(newMessage);
+      setNewMessage('');
+    }
   };
   return (
     <div className='input-container'>

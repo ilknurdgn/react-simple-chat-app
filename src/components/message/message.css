@@ -1,5 +1,6 @@
 .message-container {
   height: calc(100% - 50px);
+  overflow-y: auto;
 }
 
 .message {
@@ -32,4 +33,15 @@ img {
   overflow: hidden; /* Taşan içeriği gizlemez */
   word-wrap: break-word; /* Taşan metni yeni satırlara bölmek için */
   white-space: pre-wrap; /* Metni otomatik olarak yeni satırlara geçirir */
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #ddddf7;
+  height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8da4f1;
+  border-radius: 8px;
 }
