@@ -6,9 +6,10 @@ import './input.css';
 function Input({ addNewMessage, newMessage, setNewMessage }) {
   const messageSubmitHandle = (e) => {
     e.preventDefault();
-    if (newMessage == '') {
-    } else {
+    if (newMessage.trim() !== '') {
       addNewMessage(newMessage);
+      setNewMessage('');
+    } else {
       setNewMessage('');
     }
   };
